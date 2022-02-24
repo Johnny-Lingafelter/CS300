@@ -1,0 +1,12 @@
+/*
+* printCourses - sort and print the courses in the vector
+*
+* @param courses - vector of Course objects to be printed
+*/
+void printCourses(vector<Course>& courses) {
+    // sort vector of Courses using the overloaded "<" operator
+    sort(courses.begin(), courses.end());
+    for (Course c : courses) { // print courses
+        cout << c.number << ", " << c.title << endl;
+    }
+}
